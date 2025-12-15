@@ -138,3 +138,17 @@ footer {
     font-size: 0.8rem;
     margin-top: 2rem;
 }
+/* --- STYLE DES FORMULAIRES --- */
+.form-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    max-width: 600px;
+    margin: 0 auto; /* Centré horizontalement */
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
