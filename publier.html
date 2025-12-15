@@ -35,7 +35,18 @@
                 <label for="heure">Heure de départ</label>
                 <input type="time" id="heure" name="heure" required>
             </div>
+            <div class="form-group">
+                <label>Type de véhicule</label>
+                <div class="radio-group">
+                    <input type="radio" id="elec" name="vehicule" value="electrique">
+                    <label for="elec">Électrique</label>
+                    
+                    <input type="radio" id="therm" name="vehicule" value="thermique" checked>
+                    <label for="therm">Thermique</label>
+                </div>
+            </div>
 
+            <button type="submit" class="btn-principal" style="margin-top: 20px;">Publier mon trajet</button>
         </form>
         </main>
     
