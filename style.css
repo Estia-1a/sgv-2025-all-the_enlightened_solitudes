@@ -9,7 +9,16 @@
     --border-color: #dddddd;
     --shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
+/* Supprimer le soulignement de tous les liens */
+a {
+    text-decoration: none;
+    color: inherit; /* Garde la couleur du texte parent */
+}
 
+/* Petit effet sur le logo au survol */
+.logo:hover {
+    opacity: 0.8;
+}
 /* --- BASE & TYPOGRAPHIE --- */
 * {
     box-sizing: border-box;
