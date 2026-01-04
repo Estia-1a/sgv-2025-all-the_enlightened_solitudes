@@ -11,63 +11,105 @@
         <a href="index.html" class="logo">Covoiturage ESTIA</a>
     </header>
 
-    <div class="container main-content">
-        <h2>Trajets disponibles</h2>
-        
-        <div class="search-grid">
+    <div class="main-content">
+        <div class="container">
             
-            <aside class="filters-sidebar">
-                <h3>Filtrer</h3>
-                <div class="filter-group">
-                    <label>Prix max</label>
-                    <input type="range" min="0" max="20" value="10">
-                </div>
-                <div class="filter-group">
-                    <label>Départ après</label>
-                    <input type="time" value="08:00">
-                </div>
-                <button class="btn-principal" style="width:100%; margin-top:1rem;">Appliquer</button>
-            </aside>
+            <h2 style="margin-bottom: 20px;">Trajets disponibles pour <span style="color:var(--primary-color)">ESTIA</span></h2>
 
-            <section class="results-list">
+            <div class="search-grid">
                 
-                <article class="ride-card">
-                    <div class="driver-info">
-                        <div class="avatar">JM</div>
-                        <div>
-                            <strong>Jean Michel</strong>
-                            <span class="rating">★ 4.8</span>
-                        </div>
+                <aside class="filters-sidebar">
+                    <h3 style="margin-bottom: 15px;">Filtres</h3>
+                    
+                    <div class="filter-group">
+                        <label>Trier par date</label>
+                        <input type="date" value="2025-10-14">
                     </div>
-                    <div class="ride-details">
-                        <div class="time">08:30 ➔ 09:00</div>
-                        <div class="route">Bayonne - ESTIA</div>
-                    </div>
-                    <div class="ride-price">
-                        <strong>3,50 €</strong>
-                        <span class="seats">2 places</span>
-                    </div>
-                </article>
 
-                <article class="ride-card">
-                    <div class="driver-info">
-                        <div class="avatar" style="background-color: #f7b32c;">CL</div>
-                        <div>
-                            <strong>Clara L.</strong>
-                            <span class="rating">★ 5.0</span>
-                        </div>
+                    <div class="filter-group">
+                        <label>Prix maximum: <span id="priceVal">5€</span></label>
+                        <input type="range" min="0" max="10" step="1" value="5">
                     </div>
-                    <div class="ride-details">
-                        <div class="time">09:15 ➔ 09:45</div>
-                        <div class="route">Biarritz - ESTIA</div>
-                    </div>
-                    <div class="ride-price">
-                        <strong>4,00 €</strong>
-                        <span class="seats">1 place</span>
-                    </div>
-                </article>
 
-            </section>
+                    <div class="filter-group">
+                        <label>Places nécessaires</label>
+                        <select style="width: 100%; padding: 8px;">
+                            <option>1 place</option>
+                            <option>2 places</option>
+                            <option>3 places</option>
+                        </select>
+                    </div>
+
+                    <button class="btn-principal" style="width: 100%; margin-top: 10px; font-size: 0.9rem;">Filtrer</button>
+                </aside>
+
+                <section class="results-list">
+
+                    <article class="ride-card">
+                        <div class="driver-info">
+                            <div class="avatar">LC</div>
+                            <div>
+                                <strong>Lucas C.</strong>
+                                <div class="rating">★ 4.9 (42 avis)</div>
+                            </div>
+                        </div>
+                        <div class="ride-details">
+                            <div class="time-route">
+                                <span class="time">07:50</span> Bayonne
+                                <br>
+                                <span class="time">08:20</span> ESTIA
+                            </div>
+                        </div>
+                        <div class="ride-price">
+                            <strong>3,00 €</strong>
+                            <span class="seats">2 places rest.</span>
+                        </div>
+                    </article>
+
+                    <article class="ride-card">
+                        <div class="driver-info">
+                            <div class="avatar" style="background-color: #f7b32c;">MA</div>
+                            <div>
+                                <strong>Marie A.</strong>
+                                <div class="rating">★ 5.0 (12 avis)</div>
+                            </div>
+                        </div>
+                        <div class="ride-details">
+                            <div class="time-route">
+                                <span class="time">08:10</span> Biarritz
+                                <br>
+                                <span class="time">08:40</span> ESTIA
+                            </div>
+                        </div>
+                        <div class="ride-price">
+                            <strong>4,50 €</strong>
+                            <span class="seats">⚡ Électrique</span>
+                        </div>
+                    </article>
+
+                    <article class="ride-card">
+                        <div class="driver-info">
+                            <div class="avatar" style="background-color: #333;">TB</div>
+                            <div>
+                                <strong>Thomas B.</strong>
+                                <div class="rating">★ 4.7 (8 avis)</div>
+                            </div>
+                        </div>
+                        <div class="ride-details">
+                            <div class="time-route">
+                                <span class="time">08:00</span> Anglet
+                                <br>
+                                <span class="time">08:30</span> ESTIA
+                            </div>
+                        </div>
+                        <div class="ride-price">
+                            <strong>2,50 €</strong>
+                            <span class="seats">Full</span>
+                        </div>
+                    </article>
+
+                </section>
+            </div>
         </div>
     </div>
 
