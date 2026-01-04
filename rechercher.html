@@ -1,45 +1,76 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-
-  <meta charset="UTF-8">
-
-  <title>Recherche covoiturage</title>
-
-  <link rel="stylesheet" href="CSS_rechercher.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rechercher un trajet - Covoiturage ESTIA</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header class="header-simple">
+        <a href="index.html" class="logo">Covoiturage ESTIA</a>
+    </header>
 
-  <h1>Recherche de covoiturage</h1>
+    <div class="container main-content">
+        <h2>Trajets disponibles</h2>
+        
+        <div class="search-grid">
+            
+            <aside class="filters-sidebar">
+                <h3>Filtrer</h3>
+                <div class="filter-group">
+                    <label>Prix max</label>
+                    <input type="range" min="0" max="20" value="10">
+                </div>
+                <div class="filter-group">
+                    <label>Départ après</label>
+                    <input type="time" value="08:00">
+                </div>
+                <button class="btn-principal" style="width:100%; margin-top:1rem;">Appliquer</button>
+            </aside>
 
-  <form action="#" method="get">
-    <p>
-      <label>
-        Départ :
-        <input type="text" name="depart" placeholder="Paris">
-      </label>
-    </p>
+            <section class="results-list">
+                
+                <article class="ride-card">
+                    <div class="driver-info">
+                        <div class="avatar">JM</div>
+                        <div>
+                            <strong>Jean Michel</strong>
+                            <span class="rating">★ 4.8</span>
+                        </div>
+                    </div>
+                    <div class="ride-details">
+                        <div class="time">08:30 ➔ 09:00</div>
+                        <div class="route">Bayonne - ESTIA</div>
+                    </div>
+                    <div class="ride-price">
+                        <strong>3,50 €</strong>
+                        <span class="seats">2 places</span>
+                    </div>
+                </article>
 
-    <p>
-      <label>
-        Arrivée :
-        <input type="text" name="arrivee" placeholder="Lyon">
-      </label>
-    </p>
+                <article class="ride-card">
+                    <div class="driver-info">
+                        <div class="avatar" style="background-color: #f7b32c;">CL</div>
+                        <div>
+                            <strong>Clara L.</strong>
+                            <span class="rating">★ 5.0</span>
+                        </div>
+                    </div>
+                    <div class="ride-details">
+                        <div class="time">09:15 ➔ 09:45</div>
+                        <div class="route">Biarritz - ESTIA</div>
+                    </div>
+                    <div class="ride-price">
+                        <strong>4,00 €</strong>
+                        <span class="seats">1 place</span>
+                    </div>
+                </article>
 
-    <p>
-      <label>
-        Date :
-        <input type="date" name="date">
-      </label>
-    </p>
+            </section>
+        </div>
+    </div>
 
-    <p>
-      <button type="submit">Rechercher</button>
-    </p>
-  </form>
-
+    <footer>&copy; 2025 Projet Fil Rouge</footer>
 </body>
 </html>
