@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Covoiturage ESTIA</title>
-    <link rel="stylesheet" href="acceuil.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header-simple">
@@ -17,13 +15,29 @@
             <a href="connexion.html" class="nav-btn">Connexion</a>
         </nav>
     </header>
-    <main>
-        <p>Bienvenue sur la plateforme de covoiturage.</p>
 
-        <div class="actions">
-            <a href="rechercher.html"><button>Rechercher un trajet</button></a>
-            <a href="publier.html"><button>Publier un trajet</button></a>
+    <div class="main-content" style="background: linear-gradient(135deg, var(--primary-color) 0%, #004d4d 100%); min-height: 80vh; display: flex; align-items: center; color: white;">
+        <div class="container" style="text-align: center;">
+            
+            <h1 style="font-size: 3rem; margin-bottom: 20px;">Covoiturez malin vers l'ESTIA</h1>
+            <p style="font-size: 1.2rem; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Économisez, polluez moins et rencontrez d'autres étudiants. La plateforme de covoiturage 100% réservée aux Estiens.
+            </p>
+
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <a href="rechercher.html">
+                    <button class="btn-principal" style="padding: 15px 30px; font-size: 1.1rem;">Je cherche un trajet</button>
+                </a>
+                <a href="publier.html">
+                    <button class="btn-principal" style="background: transparent; border: 2px solid var(--accent-color); color: var(--accent-color); padding: 13px 30px; font-size: 1.1rem;">Je propose un trajet</button>
+                </a>
+            </div>
+
         </div>
-    </main>
+    </div>
+
+    <footer style="background: #222; color: white; padding: 20px; text-align: center;">
+        <p>&copy; 2025 Projet Fil Rouge - ESTIA</p>
+    </footer>
 </body>
 </html>
